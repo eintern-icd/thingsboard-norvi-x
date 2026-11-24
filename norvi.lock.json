@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "enforcementLevel": "strict",
+  "libraries": {
+    "manager": [
+      {
+        "name": "ModbusMaster",
+        "version": "2.0.1",
+        "scope": "shared"
+      },
+      {
+        "name": "PubSubClient",
+        "version": "2.8",
+        "scope": "shared"
+      }
+    ],
+    "managerResolved": [
+      {
+        "name": "ModbusMaster",
+        "version": "2.0.1"
+      },
+      {
+        "name": "PubSubClient",
+        "version": "2.8"
+      }
+    ],
+    "git": [
+      {
+        "name": "LovyanGFX",
+        "url": "https://github.com/NORVIControllers/NORVI-X-Version-02",
+        "commit": "99e2759be6815040fe1f4e6f3f2e0b5314e6c4f3",
+        "contentSha256": "328ec2a11256b0682da91740797da5eb90880c6c7b278dc495959ce76da9f52e",
+        "subpath": "libraries/LovyanGFX-1.2.25",
+        "scope": "shared"
+      }
+    ]
+  }
+}
