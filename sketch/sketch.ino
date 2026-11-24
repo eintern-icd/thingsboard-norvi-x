@@ -75,7 +75,7 @@ const char* WIFI_SSID     = "Delta6";
 const char* WIFI_PASSWORD = "bb2057756";
 const char* TB_SERVER     = "mqtt.thingsboard.cloud";    // or your own ThingsBoard host
 const int   TB_PORT       = 1883;
-const char* TB_TOKEN      = "ORooLsXvccrSQIzc7Utg";  // device access token
+const char* TB_TOKEN      = "l2gn5wcpfhrnyqq5wew3";  // device access token
 
 // ---- Hardware / timing ----
 #define RS485_RX          16
