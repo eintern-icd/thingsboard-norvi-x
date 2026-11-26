@@ -1,24 +1,3 @@
-/*
-  NORVI X1 (CPU-ESPS3-X1) + XY-MD02 (RS485 Modbus RTU) -> ThingsBoard over Wi-Fi MQTT
-  + live readings and status on the built-in 2.0" TFT (portrait, 240 x 320).
-
-  Publishes {"temperature": 32.75, "humidity": 57.73} to v1/devices/me/telemetry every 10 s.
-
-  Setup:
-    1. Edit WIFI_SSID, WIFI_PASSWORD and TB_TOKEN below (ThingsBoard device -> Manage credentials).
-       Keep real values out of any public copy of this sketch.
-    2. Wiring: sensor A -> X1 A, sensor B -> X1 B, common GND. Power the XY-MD02 from its own
-       5-30 V DC supply. The X1 RS485 direction is automatic (no flow-control pin).
-    3. Sensor assumed (check the sensor manual): slave address 1, 9600 baud 8N1,
-       input registers 0x0001 = temperature, 0x0002 = humidity.
-       Raw value / SENSOR_SCALE (100) gives the real value, e.g. raw 3275 = 32.75.
-
-  Display: Temperature and Humidity cards, status dots (WiFi / MQTT / Sensor), time since last send.
-  Temperature turns red above 35 C and cyan below 5 C, matching the ThingsBoard alarm thresholds.
-
-  Libraries: LovyanGFX (NORVI-X-Version-02 repo), ModbusMaster, PubSubClient.
-*/
-
 #include <WiFi.h>
 #include <PubSubClient.h>
 #include <ModbusMaster.h>
